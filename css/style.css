@@ -8,15 +8,15 @@
 
 
 .wrapper{
-    height: 300vh;
+    height: 200vh;
     width: 100%;
-    background-color: #1a1c22;
+    background-color: #131418;
 }
 #nav{
     height: 70px;
     width: 100%;
     background-color: #282c34;
-    box-shadow: 0 5px 5px #131418;
+    box-shadow: 0 5px 10px #090909;
     font-size: 18px;
     position: fixed;
     top: 0px;
@@ -92,6 +92,8 @@
     display: flex;
     justify-content: end;
     align-items: flex-start;
+}
+.button-close-burger{
     cursor: pointer;
 }
 .burger-menu-list{
@@ -114,57 +116,54 @@
     color: #61dafb;
 }
 
-
 .container{
     height: 100vh;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
+    box-shadow: 0 -5px 5px #131418;
 }
 .content{
     width: 100%;
-    height: 100%;
-}
-.section1{
     height: 100vh;
-    width: 100%;    
-    display: flex;
-}
-.section1-1{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 220px;
-}
-.glav-text{
-    color: #61dafb;
-    font-size: 40px;
-}
-.glav-text p{
-    font-size: 28px;
-}
-.section1-2{
-    height: 100%;
-    width: 50%;
+    position: fixed;
+    z-index: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.section1-2 img{    
+.glav-text{
+    text-align: center;
+    font-size: 28px;
+    color: #61dafb;
+}
+.glav-text h1{
+    animation-name: scrolltext1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.glav-text p{
+    animation-name: scrolltext2;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.hidden-block{
+    height: 100vh;
     width: 100%;
-    object-fit: cover;
+    opacity: 1;
 }
-
+.glav-content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #1a1c22;
+    box-shadow: 0 -5px 10px #0f0f0f;
+}
 @media (max-width:1200px){
     .nav-container{
         max-width: 992px;
     }
-    .glav-text{
-        font-size: 26px;
-    }
-    .glav-text p{
-        font-size: 22px;
-    }
+
 }
 @media (max-width:992px){
     .nav-container{
@@ -176,26 +175,43 @@
     .nav-list{
         display: none;
     }
-    .section1-1{
-        margin-top: 280px;
-    }
-    /* .glav-text{
-        font-size: 16px;
-    }
-    .glav-text p{
-        font-size: 14px;
-    } */
+
 }
 @media (max-width:768px){
 
-    .glav-text{
-        font-size: 16px;
-    }
-    .glav-text p{
-        font-size: 14px;
-    }
 }
 
+@keyframes scrolltext1 {
+    0%{
+        opacity: 1;
+    }
+    1%{
+        transform: translateY(150px);
+        
+        opacity: 0;
+    }
+}
+@keyframes scrolltext2 {
+    0%{
+        opacity: 1;
+    }
+    1%{
+        transform: translateY(250px);
+        
+        opacity: 0;
+    }
+}
+body::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+  }
+  body::-webkit-scrollbar-track {
+    background: #131418;        /* цвет дорожки */
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #61dafb;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 2px solid #131418;
+  }
 
 
 

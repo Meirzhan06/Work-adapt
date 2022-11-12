@@ -6,7 +6,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('.close-burger').click(function(event) {
+    $('.button-close-burger').click(function(event) {
         $('.burger-menu').removeClass('active');
     });
 });
