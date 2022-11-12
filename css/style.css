@@ -149,6 +149,11 @@
     animation-iteration-count: 1;
 }
 .glav-text button{
+    animation-name: scrolltext3;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+.glav-text button{
     height: 50px;
     width: 150px;
     cursor: pointer;
@@ -216,6 +221,16 @@
     }
     1%{
         transform: translateY(250px);
+        
+        opacity: 0;
+    }
+}
+@keyframes scrolltext3 {
+    0%{
+        opacity: 1;
+    }
+    1%{
+        transform: translateY(300px);
         
         opacity: 0;
     }
