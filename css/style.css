@@ -208,7 +208,7 @@
     justify-content: space-around;
 }
 .card{
-    height: 400px;
+    height: auto;
     width: 28%;
     background-color: #23252c;
     border-radius: 5px;
