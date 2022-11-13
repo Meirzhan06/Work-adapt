@@ -209,6 +209,7 @@
 }
 .card{
     height: auto;
+    min-height: 250px;
     width: 28%;
     background-color: #23252c;
     border-radius: 5px;
@@ -239,20 +240,11 @@
     .nav-container{
         max-width: 992px;
     }
-    .section1{
-        flex-direction: column;
-        align-items: center;
-    }
+
     .section1-2{
-        width: 100%;
+        font-size: 16px;
     }
-    .section1-1 img{
-        /* height: 500px; */
-        width: 100%;
-    }
-    .section1-1{
-        width: 100%;
-    }
+    
 
 
 }
@@ -278,11 +270,29 @@
         width: 100%;
         margin-bottom: 30px;
     }
+    .section1-1 img{
+        width: 100%;
+    }
+    .section1-1{
+        width: 60%;
+    }
+    .section1-2{
+        font-size: 18px;
+    }
+    .section1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1-2{
+        width: 100%;
+    }
     
 
 }
 @media (max-width:768px){
-    
+    .section1-1{
+        width: 100%;
+    }
 }
 
 @keyframes scrolltext1 {
