@@ -11,6 +11,7 @@
     height: 200vh;
     width: 100%;
     background-color: #131418;
+    color: #61dafb;
 }
 #nav{
     height: 70px;
@@ -122,7 +123,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
-    box-shadow: 0 -5px 5px #131418;
 }
 .content{
     width: 100%;
@@ -173,15 +173,80 @@
 }
 .glav-content{
     width: 100%;
-    height: 100vh;
+    height: 400vh;
     position: relative;
     background-color: #1a1c22;
     box-shadow: 0 -5px 10px #0f0f0f;
+}
+.section1{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+.section1-1{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+}
+.section1-1 img{
+    width: 100%;
+}
+.section1-2{
+    height: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 0 0 30px 30px;
+}
+.section2{
+    height: auto;
+    width: 100%;    
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    height: 400px;
+    width: 28%;
+    background-color: #23252c;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 30px;
+    box-shadow: 0 0 5px 5px #16161b;
+}
+.card-section1{
+    height: auto;
+    width: 100%;
+    border-bottom: 2px solid #61dafb;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.card-section1 img{
+    height: 60px;
+    width: 60px;
+}
+.card-section2{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
 }
 @media (max-width:1200px){
     .nav-container{
         max-width: 992px;
     }
+    .section1{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1-2{
+        width: 100%;
+    }
+
 
 }
 @media (max-width:992px){
@@ -199,10 +264,18 @@
         font-size: 18px;
         color: #61dafb;
     }
+    .section2{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
 
 }
 @media (max-width:768px){
-
+    
 }
 
 @keyframes scrolltext1 {
@@ -210,7 +283,7 @@
         opacity: 1;
     }
     1%{
-        transform: translateY(150px);
+        transform: translateY(200px);
         
         opacity: 0;
     }
