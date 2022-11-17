@@ -443,6 +443,9 @@
     .section3-2-1-2{
         padding: 0 15px;
     }
+    .slider{
+        padding: 0 30px;
+    }
 
 }
 @media (max-width:768px){
