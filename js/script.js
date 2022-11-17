@@ -20,3 +20,24 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+$(document).ready(function(){
+  $('.slider').slick({
+    dots:true,
+    adaptiveHeight:true,
+    slidesToShow:3,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
