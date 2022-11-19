@@ -252,7 +252,7 @@
     height: auto;
     width: 100%;
     display: flex;
-    padding-bottom: 15px;
+    padding: 15px 0;
 }
 .section3-1{
     width: 25%;
@@ -412,6 +412,8 @@
     outline: none;
     padding: 5px 0 0 5px;
     color: #61dafb;
+    transition: 0.2s all;
+    max-height: 250px;
 
 }
 .form-comment textarea::-webkit-scrollbar {
