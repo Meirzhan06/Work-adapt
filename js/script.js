@@ -25,6 +25,7 @@ $(document).ready(function(){
     dots:true,
     adaptiveHeight:true,
     slidesToShow:3,
+    arrows:false,
     responsive: [
       {
         breakpoint: 992,
