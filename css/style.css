@@ -8,7 +8,7 @@
 
 
 .wrapper{
-    height: 200vh;
+    height: auto;
     width: 100%;
     background-color: #131418;
     color: #61dafb;
@@ -174,7 +174,7 @@
 }
 .glav-content{
     width: 100%;
-    height: 400vh;
+    height: auto;
     position: relative;
     background-color: #1a1c22;
     box-shadow: 0 -5px 10px #0f0f0f;
@@ -369,6 +369,126 @@
     margin-top: 10px;
     text-align: center;
 }
+.section5{
+    height: auto;
+    width: 100%;
+    padding: 30px 0;
+}
+.form-inputs{
+    height: auto;
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+}
+.form-input{
+    width: 33%;
+    height: 100%;
+}
+
+.form-input input{
+    width: 100%;
+    height: 40px;
+    border:2px solid #000;
+    outline: none;
+    padding-left: 5px;
+    background-color: #1a1c22;
+    color: #61dafb;
+    transition: 0.2s all;
+}
+.form-input input:focus{
+    border-bottom: 2px solid #61dafb;
+}
+.form-comment{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+}
+.form-comment textarea{
+    min-width: 100%;
+    max-width: 100%;
+    height: 250px;
+    border: 2px solid #000;
+    background-color: #1a1c22;
+    outline: none;
+    padding: 5px 0 0 5px;
+    color: #61dafb;
+
+}
+.form-comment textarea::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+}
+.form-comment textarea::-webkit-scrollbar-track {
+    background: #131418;        /* цвет дорожки */
+}
+.form-comment textarea::-webkit-scrollbar-thumb {
+    background-color: #61dafb;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 2px solid #131418;
+}
+.form-comment textarea:focus{
+    border-bottom: 2px solid #61dafb;
+}
+.form-button{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.form-button button{
+    height: 100%;
+    width: 220px;
+    background-color: #1a1c22;
+    color: #fff;
+    transition: all 0.3s;
+    cursor: pointer;
+    border: 2px solid #61dafb;
+    color: #61dafb;
+}
+.form-button button:hover{
+    background-color: #61dafb;
+    color: #1a1c22;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: #131418;
+    color: #61dafb;
+
+}
+.foot-container{
+    width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p{
+    font-weight: bold;
+    font-size: 12px;
+}
+.footer a{
+    color: #61dafb;
+}
+
+.ico{
+    display: flex;
+}
+
+.ico a{
+    padding: 0 10px;
+    border-right: 1px solid #61dafb;
+}
+
+.ico a:last-child{
+    border-right: none;
+}
+
 @media (max-width:1200px){
     .nav-container{
         max-width: 992px;
@@ -445,6 +565,15 @@
     }
     .slider{
         padding: 0;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .form-input{
+        width: 100%;
+    }
+    .form-button button{
+        width: 100%;
     }
 
 }
